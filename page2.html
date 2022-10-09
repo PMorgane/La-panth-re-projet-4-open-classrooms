@@ -1,25 +1,25 @@
 <!doctype html>
-<html lang="Default">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
-	<meta name="keywords" content="">
-	<meta name="description" content="">
+	<meta name="robots" content="index" />
+	<meta name="description" content="l' Agence La Panthère visibilité création de site web internet ">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 
 
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
-	<title>page2</title>
+	<title>Contact</title>
 
 
 	<!-- Analytics -->
@@ -50,10 +50,10 @@
 							<li>
 								<a href="index.html">Accueil</a>
 							</li>
+
 							<li>
-							</li>
-							<li>
-								<a href="page2.html">page2 &gt;</a>
+								<!--modification titre et lien page-->
+								<a href="page2.html">Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -88,28 +88,31 @@
 						<form id="form_1" novalidate success-msg="Your message has been sent."
 							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
 							<div class="form-group">
-								<label>
+								<label for="name">
 									Nom
+									<input id="name" class="form-control" required />
 								</label>
-								<input id="name" class="form-control" required />
+
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="email">
 									Adresse email
+									<input id="email" class="form-control" type="email" required />
 								</label>
-								<input id="email" class="form-control" type="email" required />
+
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="">
 									Comment nous avez-vous connu ?
+									<input class="form-control" type="email" required id="input_504" />
 								</label>
-								<input class="form-control" type="email" required id="input_504" />
+
 							</div>
 							<div class="form-group">
-								<label>
+								<label for="message">
 									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-								</label><textarea id="message" class="form-control" rows="4" cols="50"
-									required></textarea>
+									<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+								</label>
 							</div>
 							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
 								type="submit">
@@ -129,7 +132,7 @@
 		<!-- bloc-7 END -->
 
 		<!-- ScrollToTop Button -->
-		<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
+		<a href="#" class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span
 				class="fa fa-chevron-up"></span></a>
 		<!-- ScrollToTop Button END-->
 
@@ -145,23 +148,21 @@
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-twitter icon-md">
+											Twitter</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+									<a class="social" href="https://www.facebook.com/"><span
+											class="fa fa-facebook icon-md">
+											Facebook</span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-								</div>
-							</div>
-							<div class="col-sm-3">
-								<div class="text-center">
-									<a class="social" href="index.html"><span
-											class="fa fa-instagram icon-md"></span></a>
+									<a class="social" href="index.html"><span class="fa fa-instagram icon-md">
+											Instagram</span></a>
 								</div>
 							</div>
 						</div>
