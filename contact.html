@@ -8,17 +8,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
 
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap-min.css">
+	<link rel="stylesheet" type="text/css" href="style-min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome-min.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line-min.css">
 
 
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+
 	<title>Contact</title>
 
 
@@ -37,8 +33,8 @@
 			<div class="container bloc-sm">
 				<nav class="navbar row">
 					<div class="navbar-header">
-						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.svg"
-								alt="atlanta web design logo" height="40" /></a>
+						<a class="navbar-brand" href="index.html"><img src="img/agence-la-panthere-monochrome.webp"
+								alt="La panthère web design logo" height="40" /></a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle"
 							data-toggle="collapse" data-target=".navbar-1">
 							<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
@@ -67,10 +63,10 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-12">
-						<h1 class="text-center hero-bloc-text tc-white">
+						<h1 class="text-center hero-bloc-text black">
 							Parlons web design !
 						</h1>
-						<p class="text-center mg-lg tc-white tight-width-whitespace">
+						<p class="text-center mg-lg black tight-width-whitespace">
 							Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 							Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 						</p>
@@ -85,8 +81,9 @@
 			<div class="container bloc-lg">
 				<div class="row">
 					<div class="col-sm-6">
-						<form id="form_1" novalidate success-msg="Your message has been sent."
-							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<form id="form_1" novalidate>
+							<!--success-msg="Your message has been sent."
+							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->>
 							<div class="form-group">
 								<label for="name">
 									Nom
@@ -102,9 +99,9 @@
 
 							</div>
 							<div class="form-group">
-								<label for="">
+								<label for="reseau">
 									Comment nous avez-vous connu ?
-									<input class="form-control" type="email" required id="input_504" />
+									<input class="form-control" type="email" required id="reseau" />
 								</label>
 
 							</div>
@@ -142,29 +139,42 @@
 			<div class="container bloc-sm">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="text-center white">
+						<p class="text-center black">
 							Agence La Panthère - Agence web basée à Lyon.<br>
 						</p>
 						<div class="row row-no-gutters social">
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-twitter icon-md">
-											Twitter</span></a>
+									<!-- lien à la page twitter-----><a class="social" href="https://twitter.com/"
+										aria-label="Twitter">
+										<span class="fa fa-twitter icon-md black"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="https://www.facebook.com/"><span
-											class="fa fa-facebook icon-md">
-											Facebook</span></a>
+									<!--modification lien--><a class="social" href="https://www.facebook.com/"
+										aria-label="Facebook">
+										<span class="fa fa-facebook icon-md black"></span></a>
+								</div>
+							</div>
+							<!--modif du lien +balise aria label+couleur -->
+							<div class="col-sm-3">
+								<div class="text-center">
+									<!--modification lien--><a class="social" href="https://www.dribble.com/"
+										aria-label="Dribble">
+										<span class="fa fa-dribbble icon-md black"></span></a>
 								</div>
 							</div>
 							<div class="col-sm-3">
 								<div class="text-center">
-									<a class="social" href="index.html"><span class="fa fa-instagram icon-md">
-											Instagram</span></a>
+									<!--modification lien--><a class="social" href="https://instagram.com"
+										aria-label="Instagram">
+										<span class="fa fa-instagram icon-md black"></span></a>
 								</div>
 							</div>
+							<!--<black hat>
+							<div class="keywords" style="color:white;">Agence web à paris, stratégie web, web design,
+								illustrations, design de site web, site web, web, internet, site internet, site</div>-->
 						</div>
 					</div>
 				</div>
@@ -175,7 +185,11 @@
 	</div>
 	<!-- Principal conteneur END -->
 
-
+	<script src="./js/jquery-2.1.0-min.js" defer></script>
+	<script src="./js/bootstrap-min.js" defer></script>
+	<script src="./js/blocs-min.js" defer></script>
+	<script src="./js/jqBootstrapValidation-min.js" defer></script>
+	<script src="./js/formHandler-min.js" defer></script>
 </body>
 
 </html>
